@@ -84,6 +84,7 @@
 		D41423041A7F3E4D00B3CA35 /* GroupChat */ = {
 			isa = PBXGroup;
 			children = (
+				D414232E1A7F450C00B3CA35 /* Model */,
 				D41423091A7F3E4D00B3CA35 /* AppDelegate.h */,
 				D414230A1A7F3E4D00B3CA35 /* AppDelegate.m */,
 				D414230C1A7F3E4D00B3CA35 /* FirstViewController.h */,
@@ -122,6 +123,13 @@
 				D41423231A7F3E4D00B3CA35 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D414232E1A7F450C00B3CA35 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
