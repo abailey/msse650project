@@ -17,6 +17,7 @@
 		D4E42C6A1A88899100AE688F /* GroupSvcCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E42C691A88899100AE688F /* GroupSvcCache.m */; };
 		D4E42C701A89C94800AE688F /* GroupManageController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E42C6F1A89C94800AE688F /* GroupManageController.m */; };
 		D4E42C731A89D05D00AE688F /* GroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E42C721A89D05D00AE688F /* GroupViewController.m */; };
+		D4E42C761A8AAC8100AE688F /* GroupSvcArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E42C751A8AAC8100AE688F /* GroupSvcArchive.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,8 @@
 		D4E42C6F1A89C94800AE688F /* GroupManageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupManageController.m; sourceTree = "<group>"; };
 		D4E42C711A89D05D00AE688F /* GroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupViewController.h; sourceTree = "<group>"; };
 		D4E42C721A89D05D00AE688F /* GroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupViewController.m; sourceTree = "<group>"; };
+		D4E42C741A8AAC8100AE688F /* GroupSvcArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupSvcArchive.h; sourceTree = "<group>"; };
+		D4E42C751A8AAC8100AE688F /* GroupSvcArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupSvcArchive.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +143,8 @@
 				D4E42C671A88890D00AE688F /* GroupSvc.h */,
 				D4E42C681A88899100AE688F /* GroupSvcCache.h */,
 				D4E42C691A88899100AE688F /* GroupSvcCache.m */,
+				D4E42C741A8AAC8100AE688F /* GroupSvcArchive.h */,
+				D4E42C751A8AAC8100AE688F /* GroupSvcArchive.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -249,6 +254,7 @@
 				D4E42C701A89C94800AE688F /* GroupManageController.m in Sources */,
 				D4E42C731A89D05D00AE688F /* GroupViewController.m in Sources */,
 				D4E42C661A88858B00AE688F /* Group.m in Sources */,
+				D4E42C761A8AAC8100AE688F /* GroupSvcArchive.m in Sources */,
 				D41423081A7F3E4D00B3CA35 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

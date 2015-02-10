@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Group : NSObject
+@interface Group : NSObject <NSCoding>
 
-@property (nonatomic) NSInteger *id;
+@property (nonatomic) NSInteger id;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *groupDescription;
 @property (nonatomic) NSNumber *isPublic;

@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
+#import "Group.h"
+#import "GroupSvcArchive.h"
+
 @interface GroupChatTests : XCTestCase
 
 @end
@@ -30,10 +33,28 @@
     XCTAssert(YES, @"Pass");
 }
 
-- (void)testPerformanceExample {
+- (void)testGroupSvcArchive {
     // This is an example of a performance test case.
     [self measureBlock:^{
         // Put the code you want to measure the time of here.
+        NSLog(@"*** Starting testGroupSvcArchive ***");
+        GroupSvcArchive *groupSvc = [[GroupSvcArchive alloc] init];
+        int initialCount = [[groupSvc retrieveAllGroups] count];
+        
+        Group *group = [[Group alloc] init];
+        group.id = 1;
+        group.name = @"Test";
+        group.groupDescription = @"Unit test case";
+        group.isPublic = [NSNumber numberWithInt:(1)];
+        group.owner = 1;
+        
+        [groupSvc createGroup:(Group *) group];
+        int finalCount = [[groupSvc retrieveAllGroups] count];
+        
+        XCTAssertEqual(initialCount + 1, finalCount, @"initial count %d, final count %d ", initialCount, finalCount);
+        
+        NSLog(@"*** Ending testGroupSvcArchive ***");
+        
     }];
 }
 

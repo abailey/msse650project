@@ -8,7 +8,8 @@
 
 #import "GroupViewController.h"
 #import "Group.h"
-#import "GroupSvcCache.h"
+//#import "GroupSvcCache.h"
+#import "GroupSvcArchive.h"
 
 @interface GroupViewController ()
 
@@ -16,13 +17,14 @@
 
 @implementation GroupViewController
 
-GroupSvcCache *groupSvc = nil;
+//GroupSvcCache *groupSvc = nil;
+GroupSvcArchive *groupSvc = nil;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     if (groupSvc == nil) {
-        groupSvc = [[GroupSvcCache alloc] init];
+        groupSvc = [[GroupSvcArchive alloc] init];
     }
 }
 
