@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		D41423081A7F3E4D00B3CA35 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D41423071A7F3E4D00B3CA35 /* main.m */; };
 		D414230B1A7F3E4D00B3CA35 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D414230A1A7F3E4D00B3CA35 /* AppDelegate.m */; };
-		D414230E1A7F3E4D00B3CA35 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D414230D1A7F3E4D00B3CA35 /* FirstViewController.m */; };
-		D41423111A7F3E4D00B3CA35 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D41423101A7F3E4D00B3CA35 /* SecondViewController.m */; };
 		D41423141A7F3E4D00B3CA35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D41423121A7F3E4D00B3CA35 /* Main.storyboard */; };
 		D41423161A7F3E4D00B3CA35 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D41423151A7F3E4D00B3CA35 /* Images.xcassets */; };
 		D41423191A7F3E4D00B3CA35 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D41423171A7F3E4D00B3CA35 /* LaunchScreen.xib */; };
 		D41423251A7F3E4D00B3CA35 /* GroupChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D41423241A7F3E4D00B3CA35 /* GroupChatTests.m */; };
+		D4E42C661A88858B00AE688F /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E42C651A88858B00AE688F /* Group.m */; };
+		D4E42C6A1A88899100AE688F /* GroupSvcCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E42C691A88899100AE688F /* GroupSvcCache.m */; };
+		D4E42C701A89C94800AE688F /* GroupManageController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E42C6F1A89C94800AE688F /* GroupManageController.m */; };
+		D4E42C731A89D05D00AE688F /* GroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E42C721A89D05D00AE688F /* GroupViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,16 +35,21 @@
 		D41423071A7F3E4D00B3CA35 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D41423091A7F3E4D00B3CA35 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D414230A1A7F3E4D00B3CA35 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D414230C1A7F3E4D00B3CA35 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		D414230D1A7F3E4D00B3CA35 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		D414230F1A7F3E4D00B3CA35 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		D41423101A7F3E4D00B3CA35 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		D41423131A7F3E4D00B3CA35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D41423151A7F3E4D00B3CA35 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D41423181A7F3E4D00B3CA35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D414231E1A7F3E4D00B3CA35 /* GroupChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GroupChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D41423231A7F3E4D00B3CA35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D41423241A7F3E4D00B3CA35 /* GroupChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroupChatTests.m; sourceTree = "<group>"; };
+		D4E42C641A88858B00AE688F /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
+		D4E42C651A88858B00AE688F /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
+		D4E42C671A88890D00AE688F /* GroupSvc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GroupSvc.h; sourceTree = "<group>"; };
+		D4E42C681A88899100AE688F /* GroupSvcCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupSvcCache.h; sourceTree = "<group>"; };
+		D4E42C691A88899100AE688F /* GroupSvcCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupSvcCache.m; sourceTree = "<group>"; };
+		D4E42C6E1A89C94800AE688F /* GroupManageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupManageController.h; sourceTree = "<group>"; };
+		D4E42C6F1A89C94800AE688F /* GroupManageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupManageController.m; sourceTree = "<group>"; };
+		D4E42C711A89D05D00AE688F /* GroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupViewController.h; sourceTree = "<group>"; };
+		D4E42C721A89D05D00AE688F /* GroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,14 +94,14 @@
 				D414232E1A7F450C00B3CA35 /* Model */,
 				D41423091A7F3E4D00B3CA35 /* AppDelegate.h */,
 				D414230A1A7F3E4D00B3CA35 /* AppDelegate.m */,
-				D414230C1A7F3E4D00B3CA35 /* FirstViewController.h */,
-				D414230D1A7F3E4D00B3CA35 /* FirstViewController.m */,
-				D414230F1A7F3E4D00B3CA35 /* SecondViewController.h */,
-				D41423101A7F3E4D00B3CA35 /* SecondViewController.m */,
 				D41423121A7F3E4D00B3CA35 /* Main.storyboard */,
 				D41423151A7F3E4D00B3CA35 /* Images.xcassets */,
 				D41423171A7F3E4D00B3CA35 /* LaunchScreen.xib */,
 				D41423051A7F3E4D00B3CA35 /* Supporting Files */,
+				D4E42C6E1A89C94800AE688F /* GroupManageController.h */,
+				D4E42C6F1A89C94800AE688F /* GroupManageController.m */,
+				D4E42C711A89D05D00AE688F /* GroupViewController.h */,
+				D4E42C721A89D05D00AE688F /* GroupViewController.m */,
 			);
 			path = GroupChat;
 			sourceTree = "<group>";
@@ -128,6 +135,11 @@
 		D414232E1A7F450C00B3CA35 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D4E42C641A88858B00AE688F /* Group.h */,
+				D4E42C651A88858B00AE688F /* Group.m */,
+				D4E42C671A88890D00AE688F /* GroupSvc.h */,
+				D4E42C681A88899100AE688F /* GroupSvcCache.h */,
+				D4E42C691A88899100AE688F /* GroupSvcCache.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -232,9 +244,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D41423111A7F3E4D00B3CA35 /* SecondViewController.m in Sources */,
+				D4E42C6A1A88899100AE688F /* GroupSvcCache.m in Sources */,
 				D414230B1A7F3E4D00B3CA35 /* AppDelegate.m in Sources */,
-				D414230E1A7F3E4D00B3CA35 /* FirstViewController.m in Sources */,
+				D4E42C701A89C94800AE688F /* GroupManageController.m in Sources */,
+				D4E42C731A89D05D00AE688F /* GroupViewController.m in Sources */,
+				D4E42C661A88858B00AE688F /* Group.m in Sources */,
 				D41423081A7F3E4D00B3CA35 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,6 +440,7 @@
 				D414232A1A7F3E4D00B3CA35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D414232B1A7F3E4D00B3CA35 /* Build configuration list for PBXNativeTarget "GroupChatTests" */ = {
 			isa = XCConfigurationList;
@@ -434,6 +449,7 @@
 				D414232D1A7F3E4D00B3CA35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
