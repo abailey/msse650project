@@ -31,22 +31,27 @@ Group *group = nil;
 }
 
 - (IBAction)saveGroup:(id)sender {
-    NSLog(@"GroupManageController.saveGroupL entering");
+    NSLog(@"GroupManageController.saveGroup entering");
     
     [self.view endEditing:YES];
     
-    group.name = _name.text;
-    group.groupDescription = _groupDescription.text;
-    group.isPublic = [NSNumber numberWithBool:_isPublic.on];
-    group.owner = _owner.text.integerValue;
     //[groupSvc createGroup: group];
-    NSLog(@"GroupManageController.saveGroup: group saved");
+    NSLog(@"GroupManageController.saveGroup exiting");
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if([[segue identifier] isEqualToString:@"GroupManageSaveGroupSegue"]){
+        NSLog(@"GroupManageController.prepareForSeque");
         GroupViewController *gvc = (GroupViewController *) segue.destinationViewController;
+
+        group.name = _name.text;
+        group.groupDescription = _groupDescription.text;
+        group.isPublic = [NSNumber numberWithBool:_isPublic.on];
+        group.owner = _owner.text.integerValue;
+
+        NSLog(@"Passing group: %@\n",group.name);
         [gvc saveGroup:(Group*)group];
+        NSLog(@"GroupManageController.saveGroup: group saved");
     }
 }
 
