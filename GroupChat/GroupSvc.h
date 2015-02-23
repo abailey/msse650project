@@ -11,13 +11,15 @@
 
 #import <Foundation/Foundation.h>
 #import "Group.h"
+#import "GroupVO.h"
 
 @protocol GroupSvc <NSObject>
 
-- (Group *) createGroup: (Group *) group;
-- (NSMutableArray *) retrieveAllGroups;
+- (Group *) createGroup: (GroupVO *) groupVO;
+- (NSArray *) retrieveAllGroups;
 - (Group *) updateGroup: (Group *) group;
 - (Group *) deleteGroup: (Group *) group;
+- (Group *) createManagedGroup;
 
 @end
 

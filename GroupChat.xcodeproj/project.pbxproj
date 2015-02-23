@@ -7,20 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D401E8FE1A8F0F1900E1ED55 /* SQLiteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D401E8FD1A8F0F1900E1ED55 /* SQLiteTests.m */; };
 		D41423081A7F3E4D00B3CA35 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D41423071A7F3E4D00B3CA35 /* main.m */; };
 		D414230B1A7F3E4D00B3CA35 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D414230A1A7F3E4D00B3CA35 /* AppDelegate.m */; };
 		D41423141A7F3E4D00B3CA35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D41423121A7F3E4D00B3CA35 /* Main.storyboard */; };
 		D41423161A7F3E4D00B3CA35 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D41423151A7F3E4D00B3CA35 /* Images.xcassets */; };
 		D41423191A7F3E4D00B3CA35 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D41423171A7F3E4D00B3CA35 /* LaunchScreen.xib */; };
-		D41423251A7F3E4D00B3CA35 /* GroupChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D41423241A7F3E4D00B3CA35 /* GroupChatTests.m */; };
-		D4E42C661A88858B00AE688F /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E42C651A88858B00AE688F /* Group.m */; };
-		D4E42C6A1A88899100AE688F /* GroupSvcCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E42C691A88899100AE688F /* GroupSvcCache.m */; };
+		D49398241A9AD30E0004C047 /* GroupVO.m in Sources */ = {isa = PBXBuildFile; fileRef = D49398231A9AD30E0004C047 /* GroupVO.m */; };
+		D4B3F3CA1A983E6F002A7CEE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B3F3C91A983E6F002A7CEE /* CoreData.framework */; };
+		D4B3F3D01A9932B4002A7CEE /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D4B3F3CE1A9932B4002A7CEE /* Model.xcdatamodeld */; };
+		D4B3F3D31A9933B2002A7CEE /* GroupSvcCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B3F3D21A9933B2002A7CEE /* GroupSvcCoreData.m */; };
+		D4B3F3D61A994042002A7CEE /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B3F3D51A994042002A7CEE /* Group.m */; };
 		D4E42C701A89C94800AE688F /* GroupManageController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E42C6F1A89C94800AE688F /* GroupManageController.m */; };
 		D4E42C731A89D05D00AE688F /* GroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E42C721A89D05D00AE688F /* GroupViewController.m */; };
-		D4E42C761A8AAC8100AE688F /* GroupSvcArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E42C751A8AAC8100AE688F /* GroupSvcArchive.m */; };
 		D4E42C781A8AF4A400AE688F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D4E42C771A8AF4A400AE688F /* libsqlite3.dylib */; };
-		D4E42C7B1A8AF4CE00AE688F /* GroupSvcSQLite.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E42C7A1A8AF4CE00AE688F /* GroupSvcSQLite.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +33,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D401E8FD1A8F0F1900E1ED55 /* SQLiteTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteTests.m; sourceTree = "<group>"; };
 		D41423021A7F3E4D00B3CA35 /* GroupChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroupChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D41423061A7F3E4D00B3CA35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D41423071A7F3E4D00B3CA35 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -45,21 +43,20 @@
 		D41423181A7F3E4D00B3CA35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D414231E1A7F3E4D00B3CA35 /* GroupChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GroupChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D41423231A7F3E4D00B3CA35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D41423241A7F3E4D00B3CA35 /* GroupChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroupChatTests.m; sourceTree = "<group>"; };
-		D4E42C641A88858B00AE688F /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
-		D4E42C651A88858B00AE688F /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
+		D49398221A9AD30E0004C047 /* GroupVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupVO.h; sourceTree = "<group>"; };
+		D49398231A9AD30E0004C047 /* GroupVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupVO.m; sourceTree = "<group>"; };
+		D4B3F3C91A983E6F002A7CEE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D4B3F3CF1A9932B4002A7CEE /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		D4B3F3D11A9933B2002A7CEE /* GroupSvcCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupSvcCoreData.h; sourceTree = "<group>"; };
+		D4B3F3D21A9933B2002A7CEE /* GroupSvcCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupSvcCoreData.m; sourceTree = "<group>"; };
+		D4B3F3D41A994042002A7CEE /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
+		D4B3F3D51A994042002A7CEE /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
 		D4E42C671A88890D00AE688F /* GroupSvc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GroupSvc.h; sourceTree = "<group>"; };
-		D4E42C681A88899100AE688F /* GroupSvcCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupSvcCache.h; sourceTree = "<group>"; };
-		D4E42C691A88899100AE688F /* GroupSvcCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupSvcCache.m; sourceTree = "<group>"; };
 		D4E42C6E1A89C94800AE688F /* GroupManageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupManageController.h; sourceTree = "<group>"; };
 		D4E42C6F1A89C94800AE688F /* GroupManageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupManageController.m; sourceTree = "<group>"; };
 		D4E42C711A89D05D00AE688F /* GroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupViewController.h; sourceTree = "<group>"; };
 		D4E42C721A89D05D00AE688F /* GroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupViewController.m; sourceTree = "<group>"; };
-		D4E42C741A8AAC8100AE688F /* GroupSvcArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupSvcArchive.h; sourceTree = "<group>"; };
-		D4E42C751A8AAC8100AE688F /* GroupSvcArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupSvcArchive.m; sourceTree = "<group>"; };
 		D4E42C771A8AF4A400AE688F /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		D4E42C791A8AF4CE00AE688F /* GroupSvcSQLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupSvcSQLite.h; sourceTree = "<group>"; };
-		D4E42C7A1A8AF4CE00AE688F /* GroupSvcSQLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupSvcSQLite.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4B3F3CA1A983E6F002A7CEE /* CoreData.framework in Frameworks */,
 				D4E42C781A8AF4A400AE688F /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,6 +82,7 @@
 		D41422F91A7F3E4D00B3CA35 = {
 			isa = PBXGroup;
 			children = (
+				D4B3F3C91A983E6F002A7CEE /* CoreData.framework */,
 				D4E42C771A8AF4A400AE688F /* libsqlite3.dylib */,
 				D41423041A7F3E4D00B3CA35 /* GroupChat */,
 				D41423211A7F3E4D00B3CA35 /* GroupChatTests */,
@@ -103,6 +102,7 @@
 		D41423041A7F3E4D00B3CA35 /* GroupChat */ = {
 			isa = PBXGroup;
 			children = (
+				D4B3F3CE1A9932B4002A7CEE /* Model.xcdatamodeld */,
 				D414232E1A7F450C00B3CA35 /* Model */,
 				D41423091A7F3E4D00B3CA35 /* AppDelegate.h */,
 				D414230A1A7F3E4D00B3CA35 /* AppDelegate.m */,
@@ -130,9 +130,7 @@
 		D41423211A7F3E4D00B3CA35 /* GroupChatTests */ = {
 			isa = PBXGroup;
 			children = (
-				D41423241A7F3E4D00B3CA35 /* GroupChatTests.m */,
 				D41423221A7F3E4D00B3CA35 /* Supporting Files */,
-				D401E8FD1A8F0F1900E1ED55 /* SQLiteTests.m */,
 			);
 			path = GroupChatTests;
 			sourceTree = "<group>";
@@ -148,15 +146,13 @@
 		D414232E1A7F450C00B3CA35 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D4E42C641A88858B00AE688F /* Group.h */,
-				D4E42C651A88858B00AE688F /* Group.m */,
+				D4B3F3D41A994042002A7CEE /* Group.h */,
+				D4B3F3D51A994042002A7CEE /* Group.m */,
 				D4E42C671A88890D00AE688F /* GroupSvc.h */,
-				D4E42C681A88899100AE688F /* GroupSvcCache.h */,
-				D4E42C691A88899100AE688F /* GroupSvcCache.m */,
-				D4E42C741A8AAC8100AE688F /* GroupSvcArchive.h */,
-				D4E42C751A8AAC8100AE688F /* GroupSvcArchive.m */,
-				D4E42C791A8AF4CE00AE688F /* GroupSvcSQLite.h */,
-				D4E42C7A1A8AF4CE00AE688F /* GroupSvcSQLite.m */,
+				D4B3F3D11A9933B2002A7CEE /* GroupSvcCoreData.h */,
+				D4B3F3D21A9933B2002A7CEE /* GroupSvcCoreData.m */,
+				D49398221A9AD30E0004C047 /* GroupVO.h */,
+				D49398231A9AD30E0004C047 /* GroupVO.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -261,14 +257,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4E42C6A1A88899100AE688F /* GroupSvcCache.m in Sources */,
 				D414230B1A7F3E4D00B3CA35 /* AppDelegate.m in Sources */,
 				D4E42C701A89C94800AE688F /* GroupManageController.m in Sources */,
+				D4B3F3D61A994042002A7CEE /* Group.m in Sources */,
 				D4E42C731A89D05D00AE688F /* GroupViewController.m in Sources */,
-				D4E42C661A88858B00AE688F /* Group.m in Sources */,
-				D4E42C761A8AAC8100AE688F /* GroupSvcArchive.m in Sources */,
-				D4E42C7B1A8AF4CE00AE688F /* GroupSvcSQLite.m in Sources */,
+				D4B3F3D01A9932B4002A7CEE /* Model.xcdatamodeld in Sources */,
 				D41423081A7F3E4D00B3CA35 /* main.m in Sources */,
+				D49398241A9AD30E0004C047 /* GroupVO.m in Sources */,
+				D4B3F3D31A9933B2002A7CEE /* GroupSvcCoreData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +272,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D41423251A7F3E4D00B3CA35 /* GroupChatTests.m in Sources */,
-				D401E8FE1A8F0F1900E1ED55 /* SQLiteTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +466,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D4B3F3CE1A9932B4002A7CEE /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D4B3F3CF1A9932B4002A7CEE /* Model.xcdatamodel */,
+			);
+			currentVersion = D4B3F3CF1A9932B4002A7CEE /* Model.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = ../Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D41422FA1A7F3E4D00B3CA35 /* Project object */;
 }

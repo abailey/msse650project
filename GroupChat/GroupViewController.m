@@ -7,10 +7,10 @@
 //
 
 #import "GroupViewController.h"
-#import "Group.h"
 //#import "GroupSvcCache.h"
 //#import "GroupSvcArchive.h"
-#import "GroupSvcSQLite.h"
+//#import "GroupSvcSQLite.h"
+#import "GroupSvcCoreData.h"
 
 @interface GroupViewController ()
 
@@ -20,13 +20,14 @@
 
 //GroupSvcCache *groupSvc = nil;
 //GroupSvcArchive *groupSvc = nil;
-GroupSvcSQLite *groupSvc = nil;
+//GroupSvcSQLite *groupSvc = nil;
+GroupSvcCoreData *groupSvc = nil;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     if (groupSvc == nil) {
-        groupSvc = [[GroupSvcSQLite alloc] init];
+        groupSvc = [[GroupSvcCoreData alloc] init];
     }
 }
 
@@ -35,12 +36,12 @@ GroupSvcSQLite *groupSvc = nil;
     // Dispose of any resources that can be recreated.
 }
 
-- (void)saveGroup:(Group*)group {
+- (void)saveGroup:(GroupVO*)groupVO {
     NSLog(@"GroupViewController.saveGroup entering");
     
     [self.view endEditing:YES];
     
-    [groupSvc createGroup: group];
+    [groupSvc createGroup: groupVO];
     NSLog(@"GroupViewController.saveGroup: group saved");
 }
 

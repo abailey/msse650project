@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Group.h"
+#import "GroupVO.h"
 //#import "GroupSvcCache.h"
 
 @interface GroupViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 //@property (strong) GroupSvcCache *groupSvc;
-- (void)saveGroup:(Group *)group;
+- (void)saveGroup:(GroupVO *)groupVO;
 @end

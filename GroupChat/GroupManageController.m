@@ -9,7 +9,7 @@
 #import "GroupManageController.h"
 #import "GroupViewController.h"
 
-#import "Group.h"
+#import "GroupVO.h"
 
 @interface GroupManageController ()
 
@@ -17,12 +17,12 @@
 
 @implementation GroupManageController
 
-Group *group = nil;
+GroupVO *groupVO = nil;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    group = [[Group alloc] init];
+    groupVO = [[GroupVO alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -44,13 +44,13 @@ Group *group = nil;
         NSLog(@"GroupManageController.prepareForSeque");
         GroupViewController *gvc = (GroupViewController *) segue.destinationViewController;
 
-        group.name = _name.text;
-        group.groupDescription = _groupDescription.text;
-        group.isPublic = [NSNumber numberWithBool:_isPublic.on];
-        group.owner = _owner.text.integerValue;
+        groupVO.name = _name.text;
+        groupVO.groupDescription = _groupDescription.text;
+        groupVO.isPublic = [NSNumber numberWithBool:_isPublic.on];
+        groupVO.owner = [NSNumber numberWithInt:_owner.text.integerValue];
 
-        NSLog(@"Passing group: %@\n",group.name);
-        [gvc saveGroup:(Group*)group];
+        NSLog(@"Passing group: %@\n",groupVO.name);
+        [gvc saveGroup:(GroupVO*)groupVO];
         NSLog(@"GroupManageController.saveGroup: group saved");
     }
 }
