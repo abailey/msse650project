@@ -85,6 +85,10 @@ NSManagedObjectContext *moc = nil;
 
 - (Group *) deleteGroup:(Group *)group {
     [moc deleteObject:group];
+    NSError *error;
+    if (![moc save:&error]) {
+        NSLog(@"updateContact ERROR: %@", [error localizedDescription]);
+    }
     return group;
 }
 

@@ -11,6 +11,7 @@
 //#import "GroupSvcArchive.h"
 //#import "GroupSvcSQLite.h"
 #import "GroupSvcCoreData.h"
+#import "GroupMessagesController.h"
 
 @interface GroupViewController ()
 
@@ -71,5 +72,50 @@ GroupSvcCoreData *groupSvc = nil;
     // Pass the selected object to the new view controller.
 }
 */
+
+//when blue accessory button has been pressed
+/*
+- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath{
+    
+    NSLog(@"accessoryButtonTappedForRowWithIndexPath");
+    //turn into edit mode
+    [tableView setEditing:YES animated:YES];
+}
+
+- (void)setEditing:(BOOL)editing animated:(BOOL)animated{
+    
+    [super setEditing:editing animated:animated];
+}
+ */
+
+// Respond to a table cell item being selected
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"didSelectRowAtIndexPath Start");
+    //[tableView deselectRowAtIndexPath:indexPath animated:NO];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle: nil];
+    GroupMessagesController *groupMessagesController = [storyboard instantiateViewControllerWithIdentifier:@"GroupMessagesController"];
+    //groupMessagesController.selectedGroup = [[groupSvc retrieveAllGroups] objectAtIndex:indexPath.row];
+    [self.navigationController pushViewController:groupMessagesController animated:YES];
+    NSLog(@"didSelectRowAtIndexPath End");
+}
+
+// method to enable the deleting of rows
+-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    NSLog(@"commitEditingStyle");
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        
+        Group *group = [[groupSvc retrieveAllGroups] objectAtIndex:indexPath.row];
+        
+        [groupSvc deleteGroup:group];
+        
+        [tableView setEditing:NO animated:YES];
+        
+        // refresh the table view
+        [tableView reloadData];
+    }
+    
+}
 
 @end

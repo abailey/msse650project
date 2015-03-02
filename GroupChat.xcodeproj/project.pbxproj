@@ -12,6 +12,8 @@
 		D41423141A7F3E4D00B3CA35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D41423121A7F3E4D00B3CA35 /* Main.storyboard */; };
 		D41423161A7F3E4D00B3CA35 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D41423151A7F3E4D00B3CA35 /* Images.xcassets */; };
 		D41423191A7F3E4D00B3CA35 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D41423171A7F3E4D00B3CA35 /* LaunchScreen.xib */; };
+		D45ADB4F1A9E340B00365679 /* GroupMessagesController.m in Sources */ = {isa = PBXBuildFile; fileRef = D45ADB4E1A9E340B00365679 /* GroupMessagesController.m */; };
+		D45ADB521A9E366D00365679 /* ProfileManageController.m in Sources */ = {isa = PBXBuildFile; fileRef = D45ADB511A9E366D00365679 /* ProfileManageController.m */; };
 		D49398241A9AD30E0004C047 /* GroupVO.m in Sources */ = {isa = PBXBuildFile; fileRef = D49398231A9AD30E0004C047 /* GroupVO.m */; };
 		D4B3F3CA1A983E6F002A7CEE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B3F3C91A983E6F002A7CEE /* CoreData.framework */; };
 		D4B3F3D01A9932B4002A7CEE /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D4B3F3CE1A9932B4002A7CEE /* Model.xcdatamodeld */; };
@@ -43,6 +45,10 @@
 		D41423181A7F3E4D00B3CA35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D414231E1A7F3E4D00B3CA35 /* GroupChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GroupChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D41423231A7F3E4D00B3CA35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D45ADB4D1A9E340B00365679 /* GroupMessagesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupMessagesController.h; sourceTree = "<group>"; };
+		D45ADB4E1A9E340B00365679 /* GroupMessagesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupMessagesController.m; sourceTree = "<group>"; };
+		D45ADB501A9E366D00365679 /* ProfileManageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileManageController.h; sourceTree = "<group>"; };
+		D45ADB511A9E366D00365679 /* ProfileManageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileManageController.m; sourceTree = "<group>"; };
 		D49398221A9AD30E0004C047 /* GroupVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupVO.h; sourceTree = "<group>"; };
 		D49398231A9AD30E0004C047 /* GroupVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupVO.m; sourceTree = "<group>"; };
 		D4B3F3C91A983E6F002A7CEE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -82,6 +88,10 @@
 		D41422F91A7F3E4D00B3CA35 = {
 			isa = PBXGroup;
 			children = (
+				D45ADB501A9E366D00365679 /* ProfileManageController.h */,
+				D45ADB511A9E366D00365679 /* ProfileManageController.m */,
+				D45ADB4D1A9E340B00365679 /* GroupMessagesController.h */,
+				D45ADB4E1A9E340B00365679 /* GroupMessagesController.m */,
 				D4B3F3C91A983E6F002A7CEE /* CoreData.framework */,
 				D4E42C771A8AF4A400AE688F /* libsqlite3.dylib */,
 				D41423041A7F3E4D00B3CA35 /* GroupChat */,
@@ -257,7 +267,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D45ADB4F1A9E340B00365679 /* GroupMessagesController.m in Sources */,
 				D414230B1A7F3E4D00B3CA35 /* AppDelegate.m in Sources */,
+				D45ADB521A9E366D00365679 /* ProfileManageController.m in Sources */,
 				D4E42C701A89C94800AE688F /* GroupManageController.m in Sources */,
 				D4B3F3D61A994042002A7CEE /* Group.m in Sources */,
 				D4E42C731A89D05D00AE688F /* GroupViewController.m in Sources */,
